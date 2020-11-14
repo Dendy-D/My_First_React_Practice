@@ -1,0 +1,8 @@
+.main {
+  grid-area: m;
+  background-color: rgb(167, 20, 167);
+}
+
+.main img {
+  width: 1000px;
+}
