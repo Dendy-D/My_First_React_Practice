@@ -1,0 +1,14 @@
+.main {
+  grid-area: m;
+  background-color: rgb(167, 20, 167);
+
+  &__container-fon {
+    img {
+      width: 710px;
+      height: 300px;
+    }
+  }
+
+  // &__myPosts {
+  // }
+}

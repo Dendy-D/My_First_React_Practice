@@ -1,10 +1,15 @@
 import React from 'react'
-import objClass from './MyPosts.module.css'
+import Post from './Post/Post'
+
+import '../Profile.scss'
 
 const MyPosts = () => {
   return (
-    <div>
-      Мои посты
+    <div className='main__myPosts'>
+      <div>Мои посты</div>
+      <Post />
+      <Post />
+      <Post />
     </div>
   )
 }

@@ -1,14 +1,15 @@
 import React from 'react'
 import MyPosts from './MyPosts/MyPosts'
-import objClass from './Profile.module.css'
+
+import './Profile.scss'
 
 const Profile = () => {
   return (
-    <main className={objClass.main}>
-      <div>
-        <img src='https://icocnews.ru/wp-content/uploads/2015/09/priroda.jpg' alt='' />
+    <main className='main'>
+      <div className='main__container-fon'>
+        {/* <img src={mainImg} alt='Main fon' /> */}
       </div>
-      <MyPosts/>
+      <MyPosts />
     </main>
   )
 }
