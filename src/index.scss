@@ -42,5 +42,12 @@ hr {
     width: 1200px;
     grid-template-areas: 'n m';
     grid-gap: 20px;
+
+    & .rightSide {
+    grid-area: m;
+    background-color: #74cafe;
+    border: 5px solid #1da1f2;
+    }
   }
+
 }
