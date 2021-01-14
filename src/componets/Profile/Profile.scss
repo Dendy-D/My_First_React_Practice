@@ -1,14 +1,169 @@
-.main {
+.profile {
   grid-area: m;
-  background-color: rgb(167, 20, 167);
+  background-color: #74cafe;
+  border: 5px solid #1da1f2;
 
-  &__container-fon {
-    img {
-      width: 710px;
-      height: 300px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 90px;
+
+    &-edit {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      svg {
+        margin-right: 15px;
+      }
+      span {
+        color: #ffffff;
+        font-size: 20px;
+      }
+
+      .circle {
+        opacity: 0;
+        margin-left: 10px;
+        transition: 0.2s ease-in opacity;
+      }
+
+      &:hover .circle {
+        opacity: 1;
+        transition: 0.2s ease-in;
+      }
+    }
+
+    &-status {
+      color: #ffffff;
+      font-size: 20px;
+      span {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        color: #ffffff;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
-  // &__myPosts {
-  // }
+  &__main {
+    min-height: 370px;
+
+    &-container {
+      display: flex;
+      padding: 0 115px;
+      padding-top: 30px;
+
+      img {
+        width: 200px;
+        height: 236px;
+        border: 3px solid #1da1f2;
+      }
+    }
+
+    &-avatar {
+      margin-right: 35px;
+    }
+
+    &-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      & div:not(.profile__main-logo):hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    &-logo {
+      font-weight: bold;
+      font-size: 30px;
+      color: #ffffff;
+    }
+
+    div:not(.profile__main-logo) {
+      font-size: 20px;
+      line-height: 23px;
+      color: #ffffff;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      color: #0770b0;
+    }
+
+    &-Git-Hub {
+      margin-left: 130px;
+      margin-top: 30px;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__myPosts {
+    &-container {
+      padding: 50px 120px;
+    }
+
+    &-logo {
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 29px;
+      color: #ffffff;
+      margin-bottom: 28px;
+    }
+
+    form {
+      input {
+        width: 500px;
+        height: 55px;
+        background: #9dd8fc;
+        border: 1px solid #1da1f2;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding-left: 20px;
+        color: #0770b0;
+        font-size: 18px;
+
+        &::placeholder {
+          color: #fff;
+          font-size: 14px;
+        }
+      }
+
+      button {
+        width: 130.07px;
+        height: 30px;
+        background-color: #1da1f2;
+        border-radius: 100px;
+        border: none;
+        color: #fff;
+        margin-top: 30px;
+        margin-left: 367px;
+        margin-bottom: 43px;
+        cursor: pointer;
+        transition: 0.2s ease-in background-color;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        &:hover {
+          background-color: #0770b0;
+          transition: 0.2s ease-in;
+        }
+        &:focus {
+          background-color: #0770b0;
+          border: 1px solid white;
+        }
+      }
+    }
+  }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import CatSvg from './CatSvg'
 
 import './Nav.scss'
 
@@ -148,7 +149,11 @@ const Nav = () => {
           <a href='*'>Communities</a>
         </div>
       </div>
-      <hr/>
+      <hr />
+      <div className='nav__aditional'>
+        <div>Additional information</div>
+        <CatSvg/>
+      </div>
     </nav>
   )
 }

@@ -1,14 +1,15 @@
 import React from 'react'
 
-// import avatar from '../../../../assets/images/ava.png'
+import userAvatar from '../../../../assets/images/ava.jpg'
 
 import './Post.scss'
 
 const Post = () => {
   return (
     <div className='post'>
-      {/* <img className='post__avatar' src={avatar} alt='Avatar'/> */}
-      Post 1
+      <img className='post__avatar' src={userAvatar} alt='Avatar'/>
+      <div className='post__content'>Me sooo good</div>
+      <div className='post__date'>09.01.2021</div>
     </div>
   )
 }

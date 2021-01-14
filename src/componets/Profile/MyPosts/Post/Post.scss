@@ -1,7 +1,27 @@
 .post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
   &__avatar {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
+    border: 3px solid #1da1f2;
+  }
+
+  &__content {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0770b0;
+    margin-left: -220px;
+  }
+
+  &__date {
+    font-size: 12px;
+    line-height: 14px;
+    color: #0770b0;
   }
 }

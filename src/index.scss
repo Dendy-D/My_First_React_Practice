@@ -19,6 +19,12 @@ code {
     monospace;
 }
 
+hr {
+  border: none;
+  height: 2px;
+  background-color: #1da1f2;
+}
+
 .app {
   margin: 0 auto;
 
@@ -35,7 +41,6 @@ code {
     display: grid;
     width: 1200px;
     grid-template-areas: 'n m';
-    grid-template-columns: 440px 710px;
     grid-gap: 20px;
   }
 }

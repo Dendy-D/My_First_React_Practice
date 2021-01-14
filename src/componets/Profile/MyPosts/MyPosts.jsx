@@ -5,11 +5,17 @@ import '../Profile.scss'
 
 const MyPosts = () => {
   return (
-    <div className='main__myPosts'>
-      <div>Мои посты</div>
-      <Post />
-      <Post />
-      <Post />
+    <div className='profile__myPosts'>
+      <div className='profile__myPosts-container'>
+        <div className='profile__myPosts-logo'>Мои посты</div>
+        <form>
+          <input type='text' placeholder='Some information.....' />
+          <button>Send</button>
+        </form>
+        <Post />
+        <Post />
+        <Post />
+      </div>
     </div>
   )
 }
