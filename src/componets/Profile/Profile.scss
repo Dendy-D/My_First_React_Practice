@@ -1,5 +1,4 @@
 .profile {
-
   &__header {
     display: flex;
     justify-content: space-between;
@@ -42,6 +41,7 @@
 
       &:hover {
         cursor: pointer;
+        text-decoration: underline;
       }
     }
   }

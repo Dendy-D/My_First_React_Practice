@@ -44,10 +44,10 @@ hr {
     grid-gap: 20px;
 
     & .rightSide {
-    grid-area: m;
-    background-color: #74cafe;
-    border: 5px solid #1da1f2;
+      grid-area: m;
+      background-color: #74cafe;
+      border: 5px solid #1da1f2;
+      min-width: 730px;
     }
   }
-
 }

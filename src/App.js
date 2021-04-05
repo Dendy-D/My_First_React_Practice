@@ -4,7 +4,11 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Header from './componets/Header/Header'
 import Nav from './componets/Navbar/Nav'
 import Profile from './componets/Profile/Profile'
-import Message from './componets/Message/Message'
+import Messages from './componets/Messages/Messages'
+import Music from './componets/Music/Music'
+import Communities from './componets/Communities/Communities'
+import News from './componets/News/News'
+import Friends from './componets/Friends/Friends'
 
 import './index.scss'
 
@@ -19,7 +23,11 @@ const App = () => {
           <Nav />
           <div className='rightSide'>
             <Route path='/profile' component={Profile} />
-            <Route path='/messages' component={Message} />
+            <Route path='/friends' component={Friends} />
+            <Route path='/dialogs' component={Messages} />
+            <Route path='/music' component={Music} />
+            <Route path='/communities' component={Communities} />
+            <Route path='/news' component={News} />
           </div>
         </div>
       </div>

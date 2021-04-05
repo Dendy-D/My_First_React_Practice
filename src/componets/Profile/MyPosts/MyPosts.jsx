@@ -7,7 +7,7 @@ const MyPosts = () => {
   return (
     <div className='profile__myPosts'>
       <div className='profile__myPosts-container'>
-        <div className='profile__myPosts-logo'>Мои посты</div>
+        <div className='profile__myPosts-logo'>My posts</div>
         <form>
           <input type='text' placeholder='Some information.....' />
           <button>Send</button>

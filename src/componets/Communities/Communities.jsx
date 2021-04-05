@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Message = () => {
+const Communities = () => {
   return (
     <div>
       <h1>Hello world</h1>
@@ -8,4 +8,4 @@ const Message = () => {
   )
 }
 
-export default Message
+export default Communities
