@@ -1,11 +1,14 @@
 import React from 'react'
 import MyPosts from './MyPosts/MyPosts'
+import Post from './MyPosts/Post/Post'
 
 import userAvatar from '../../assets/images/ava.jpg'
 
 import './Profile.scss'
 
-const Profile = () => {
+const Profile = (props) => {
+  let postsElements = props.posts.map((p) => <Post text={p.content} date={p.date} />)
+
   return (
     <div className='profile'>
       <div className='profile__header'>
@@ -70,7 +73,7 @@ const Profile = () => {
         </div>
       </div>
       <hr />
-      <MyPosts />
+      <MyPosts postsArray={postsElements} />
     </div>
   )
 }

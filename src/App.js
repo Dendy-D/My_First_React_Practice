@@ -12,7 +12,7 @@ import Friends from './componets/Friends/Friends'
 
 import './index.scss'
 
-const App = () => {
+const App = (props) => {
   return (
     <Router>
       <div className='app'>
@@ -22,12 +22,20 @@ const App = () => {
         <div className='app__сontent'>
           <Nav />
           <div className='rightSide'>
-            <Route path='/profile' component={Profile} />
-            <Route path='/friends' component={Friends} />
-            <Route path='/dialogs' component={Messages} />
-            <Route path='/music' component={Music} />
-            <Route path='/communities' component={Communities} />
-            <Route path='/news' component={News} />
+            <Route
+              path='/profile'
+              render={() => <Profile posts={props.posts} />}
+            />
+            <Route path='/friends' render={() => <Friends />} />
+            <Route
+              path='/dialogs'
+              render={() => (
+                <Messages messages={props.messages} dialogs={props.dialogs} />
+              )}
+            />
+            <Route path='/music' render={() => <Music />} />
+            <Route path='/communities' render={() => <Communities />} />
+            <Route path='/news' render={() => <News />} />
           </div>
         </div>
       </div>
