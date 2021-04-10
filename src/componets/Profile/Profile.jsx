@@ -7,7 +7,9 @@ import userAvatar from '../../assets/images/ava.jpg'
 import './Profile.scss'
 
 const Profile = (props) => {
-  let postsElements = props.posts.map((p) => <Post text={p.content} date={p.date} />)
+  let postsElements = props.profilePage.posts.map((p) => (
+    <Post text={p.content} date={p.date} />
+  ))
 
   return (
     <div className='profile'>
@@ -73,7 +75,11 @@ const Profile = (props) => {
         </div>
       </div>
       <hr />
-      <MyPosts postsArray={postsElements} />
+      <MyPosts
+        profilePage={props.profilePage}
+        postsArray={postsElements}
+        dispatch={props.dispatch}
+      />
     </div>
   )
 }

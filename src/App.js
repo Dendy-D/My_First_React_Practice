@@ -24,13 +24,21 @@ const App = (props) => {
           <div className='rightSide'>
             <Route
               path='/profile'
-              render={() => <Profile posts={props.posts} />}
+              render={() => (
+                <Profile
+                  profilePage={props.state.profilePage}
+                  dispatch={props.dispatch}
+                />
+              )}
             />
             <Route path='/friends' render={() => <Friends />} />
             <Route
               path='/dialogs'
               render={() => (
-                <Messages messages={props.messages} dialogs={props.dialogs} />
+                <Messages
+                  dialogsPage={props.state.dialogsPage}
+                  dispatch={props.dispatch}
+                />
               )}
             />
             <Route path='/music' render={() => <Music />} />
